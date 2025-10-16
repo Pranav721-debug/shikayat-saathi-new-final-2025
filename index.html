@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shikayat Saathi</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="script.js" defer></script>
+</head>
+<body>
+  <h1>Shikayat Saathi</h1>
+  <div id="slogan">आपका सहायक</div>
+
+  <div class="language-buttons">
+    <button onclick="selectLanguage('hi')">हिंदी</button>
+    <button onclick="selectLanguage('kn')">ಕನ್ನಡ</button>
+    <button onclick="selectLanguage('ta')">தமிழ்</button>
+    <button onclick="selectLanguage('ur')">اردو</button>
+    <button onclick="selectLanguage('gu')">ગુજરાતી</button>
+    <button onclick="selectLanguage('bn')">বাংলা</button>
+    <button onclick="selectLanguage('or')">ଓଡ଼ିଆ</button>
+    <button onclick="selectLanguage('raj')">राजस्थानी</button>
+  </div>
+
+  <div class="input-container">
+    <div class="input-box" id="stepText">कृपया अपनी समस्या बताएं</div>
+    <div class="input-box" id="resultText"></div>
+    <button class="mic-button" onclick="startRecognition()" id="micButton">🎤 बोलें</button>
+  </div>
+
+  <hr style="margin-top: 40px;">
+  <h2>Complaint Status Tracker</h2>
+  <input type="text" id="trackId" placeholder="Enter your Complaint ID" class="input-box"/>
+  <button class="track-button" onclick="trackComplaint()">Track Complaint</button>
+  <div id="trackResult"></div>
+</body>
+</html>
